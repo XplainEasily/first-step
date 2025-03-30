@@ -14,4 +14,10 @@ export class AppController {
   getFr(): string {
     return this.appService.getFr();
   }
+
+  @Get("/items")
+  getItems(): string[] {
+    return this.appService.getItems();
+  }
+
 }
